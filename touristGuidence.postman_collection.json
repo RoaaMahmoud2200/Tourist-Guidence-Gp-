@@ -1,0 +1,1004 @@
+{
+	"info": {
+		"_postman_id": "55c7503f-35ce-414c-9c27-239793ce0564",
+		"name": "touristGuidence",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33024720",
+		"_collection_link": "https://x22222-7241.postman.co/workspace/x-Workspace~5be50e8e-17e5-4606-8a16-c556f6707474/collection/33024720-55c7503f-35ce-414c-9c27-239793ce0564?action=share&source=collection_link&creator=33024720"
+	},
+	"item": [
+		{
+			"name": "monument",
+			"item": [
+				{
+					"name": "createMonument",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "7aa519a63213fef5c39b3661876170cf",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Amr Ibn Al-Aas Mosque",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "The mosque of ‘Amr ibn al-‘As is the oldest surviving mosque in Egypt and Africa. General ʿAmr ibn al-ʿAs was one of the first companions of the Prophet Muhammad. After conquering Egypt in 20 AH/640 AD, he founded its first Islamic capital, Fustat, which falls within the modern city of Cairo. A year later, by order of the Caliph ‘Umar ibn al-Khattab, he also founded the eponymous mosque of ‘Amr ibn al-‘As, which thus became the new capital’s very first building.",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "cairo,Egypt",
+									"type": "text"
+								},
+								{
+									"key": "weather",
+									"value": "clear",
+									"type": "text"
+								},
+								{
+									"key": "historical_period",
+									"value": "ancient",
+									"type": "text"
+								},
+								{
+									"key": "instructions",
+									"value": "camera",
+									"type": "text"
+								},
+								{
+									"key": "availability",
+									"value": "from 9 am to 4 pm",
+									"type": "text"
+								},
+								{
+									"key": "image_url",
+									"type": "file",
+									"src": "/C:/Users/st/Downloads/amrAbnAlas.webp"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/monument",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"monument"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMonument",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "7aa519a63213fef5c39b3661876170cf",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": " Philae temple",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Once called the Great Necropolis of Millions of Years of Pharaoh, or the Place of Truth, the Valley of the Kings (Wadi Biban al-Muluk) has 63 magnificent royal tombs from the New Kingdom period (1550–1069 BC), all very different from each other. The West Bank had been the site of royal burials from the First Intermediate Period (2181–2055 BC) onwards. At least three 11th-dynasty rulers built their tombs near the modern village of Taref, northeast of the Valley of the Kings. The 18th-dynasty pharaohs, however, chose the isolated valley dominated by the pyramid shaped mountain peak of al-Qurn (The Horn). The secluded site enclosed by steep cliffs was easy to guard and, when seen from the Theban plain, appears to be the site of the setting sun, associated with the afterlife by ancient Egyptians.The tombs have suffered great damage from treasure hunters, floods and, in recent years, from mass tourism: carbon dioxide, friction and humidity produced by the average of 2.8g of sweat left by each visitor have affected the reliefs and the pigments of the wall paintings. The Department of Antiquities has since installed dehumidifiers and glass screens in the worst affected tombs, and introduced a rotation system for opening some tombs to the public while restoring others. Each tomb has a number that represents the order in which it was discovered. KV (short for Kings Valley) 1 belongs to Ramses VII; it has been open since Greek and Roman times, and was mentioned in the Description de l’Egypte, dating from the late 18th century. KV 62 – Tutankhamun’s famous tomb, which was discovered by Howard Carter in 1922 – was until recently the last one to be discovered, but in 2006 KV 63 was discovered, with a few empty sarcophagus, so it is not clear if this was a royal tomb or a chamber for the mummification process.",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Luxor,Egypt",
+									"type": "text"
+								},
+								{
+									"key": "weather",
+									"value": "sunney",
+									"type": "text"
+								},
+								{
+									"key": "historical_period",
+									"value": "ancient",
+									"type": "text"
+								},
+								{
+									"key": "instructions",
+									"value": "camera,pets",
+									"type": "text"
+								},
+								{
+									"key": "availability",
+									"value": "from 12:00 am to 11:00 pm",
+									"type": "text"
+								},
+								{
+									"key": "image_url",
+									"type": "file",
+									"src": "postman-cloud:///1eede526-5993-4cd0-a07b-a93b3768dd25"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/monument/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"monument",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMonument",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "7aa519a63213fef5c39b3661876170cf",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/monument/70",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"monument",
+								"70"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listAllMonument",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "c43ea0a3d387023e9cdb95fc91ec4383",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/monument",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"monument"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showSpecificMonument",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "c43ea0a3d387023e9cdb95fc91ec4383",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/monument/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"monument",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reviewMonument",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "c43ea0a3d387023e9cdb95fc91ec4383",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"monument_id\":\"13\",\r\n    \"review\":\"my favourite place\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/monument/review",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"monument",
+								"review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/classify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/st/Downloads/67890.webp"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/classify",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"classify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/recommend?monument=Azhar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/recommend?monument=Babylon Fortress",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"recommend"
+							],
+							"query": [
+								{
+									"key": "monument",
+									"value": "Babylon Fortress"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show scaned monument for specific user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "c43ea0a3d387023e9cdb95fc91ec4383",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/monument/scanedMonument",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"monument",
+								"scanedMonument"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "trip",
+			"item": [
+				{
+					"name": "createTrip",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "7aa519a63213fef5c39b3661876170cf",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "destination",
+									"value": "gggggg 07-Dec",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Get beyond the Cairo sights on a full-day, private tour to Al-Fayoum that explores nature, history, and wildlife in an ancient oasis. Visit the salty, scenic Lake Qarun, then explore the collection of Roman-era mummy portraits and statues in the Fayoum museum. Discover a series of waterfalls in the heart of the desert at Wadi El-Rayan, set sail on a traditional Egyptian felucca, and dine at a local restaurant before returning to the city.",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "800",
+									"type": "text"
+								},
+								{
+									"key": "num_of_reservation",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "image_url",
+									"type": "file",
+									"src": "postman-cloud:///1eef35e6-8d7c-42b0-9bfd-edab06c89ebc"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/trip",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateTrip",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "7aa519a63213fef5c39b3661876170cf",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "destination",
+									"value": "nile",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Nile River, Arabic Baḥr Al-Nīl or Nahr Al-Nīl, the longest river in the world, called the father of African rivers. It rises south of the Equator and flows northward through northeastern Africa to drain into the Mediterranean Sea. It has a length of about 4,132 miles (6,650 kilometres) and drains an area estimated at 1,293,000 square miles (3,349,000 square kilometres). Its basin includes parts of Tanzania, Burundi, Rwanda, the Democratic Republic of the Congo, Kenya, Uganda, South Sudan, Ethiopia, Sudan, and the cultivated part of Egypt. Its most distant source is the Kagera River in Burundi.",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "300",
+									"type": "text"
+								},
+								{
+									"key": "num_of_reservation",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "image_url",
+									"type": "file",
+									"src": "postman-cloud:///1eee1b68-be4a-48e0-96b7-b6c039490d40"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/trip/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trip",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTrip",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "7aa519a63213fef5c39b3661876170cf",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trip/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trip",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listAllTrip",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trip",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showSpecificTrip",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trip/24",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trip",
+								"24"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reviewTrip",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "41c329852c66db57877eaee81155db85",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"trip_id\":\"8\" ,\r\n    \"review\":\" very nice\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trip/review",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trip",
+								"review"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "search",
+			"item": [
+				{
+					"name": "doSearch",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "2b11f1bc41151f307fb99834e9e55cd9",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"keyword\":\"Mohamed Ali Mosque in cairo citadel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/search",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showSearchHistory",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "41c329852c66db57877eaee81155db85",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/search/history",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"search",
+								"history"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "favourite",
+			"item": [
+				{
+					"name": "addFavourite",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "c43ea0a3d387023e9cdb95fc91ec4383",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"monument_id\":18\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/favourite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favourite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "showFavouritesForSpecificUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "c43ea0a3d387023e9cdb95fc91ec4383",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/favourite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favourite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteFavourite",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "c43ea0a3d387023e9cdb95fc91ec4383",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/favourite/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favourite",
+								"21"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "reservation",
+			"item": [
+				{
+					"name": "listAllReservationOfSpecificUser(user)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "2b11f1bc41151f307fb99834e9e55cd9",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/profile/booking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"booking"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reserveTrip",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "f1882b3b5c1abe8b7d24e0d3044b801c",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:3000/trip/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trip",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listAllBooking(admin)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "7aa519a63213fef5c39b3661876170cf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/profile/allBooking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"allBooking"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancelReservation",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "f1882b3b5c1abe8b7d24e0d3044b801c",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/profile/booking/16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"booking",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allBookingForSpecificTrip",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "7aa519a63213fef5c39b3661876170cf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/profile/allBookingForSpecificTrip/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"allBookingForSpecificTrip",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listAllReservedTripWithUsersReserveIt",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "7aa519a63213fef5c39b3661876170cf",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/profile/allBookingTripsWithUsersReserveIt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"allBookingTripsWithUsersReserveIt"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
